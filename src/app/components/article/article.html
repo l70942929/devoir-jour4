@@ -1,0 +1,22 @@
+<div class=" d-flex h-100 justify-content-center align-items-center  fw-bold fs-3 text-white  border border-3 border-warning vh-md-50  w-100 " style="min-height: 160px; max-height: 500px; background-color: #88dd88;" >
+    <div class="container text-center mt-4">
+    <h3>Mon Mini Compteur</h3>
+    
+    <!-- Affichage du nombre avec ngClass dynamique -->
+    <h1 [ngClass]="{
+        'txt-rouge': count < 0,
+        'txt-vert': count > 0,
+        'txt-gris': count === 0
+    }">
+        {{ count }}
+    </h1>
+
+    <!-- Boutons de contrôle avec les classes Bootstrap -->
+    <div class="btn-group">
+        <button class="btn btn-danger" (click)="decrementer()">-</button>
+        <button class="btn btn-success" (click)="incrementer()">+</button>
+    </div>
+    </div>
+
+    </div>
+

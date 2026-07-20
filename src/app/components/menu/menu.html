@@ -1,0 +1,22 @@
+<div class="d-flex align-items-center justify-content-between w-100 ">
+    <div>
+        @if(displayMenu){
+            <ul class="d-flex list-unstyled gap-3 fs-6 m-2">
+                @for (item of navigation ; track item.id ; let i=$index){
+                    <li>
+                        <a href="{{item.url}}" class="text-decoration-none text-white " (click)="rendreActif(item)" [class.active]="lienActif===item">{{item.label}}</a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+    <div>
+        @if(displayMenu){
+            <button (click)="ToggleMenu()" class="btn bg-secondary  m-4 btn-light " >Hide</button>
+        }@else{
+            <button (click)="ToggleMenu()" class=" btn bg-secondary m-4 btn-light">Display</button>
+        }
+    </div>
+</div>
+
+

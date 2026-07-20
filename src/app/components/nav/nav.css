@@ -1,0 +1,16 @@
+nav{
+    background-color: greenyellow;
+    color: white;
+    font: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    font-size: 2rem;
+
+}
+@media (max-width: 600px){
+    nav{
+        height: 55px;
+    }
+}

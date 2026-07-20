@@ -1,0 +1,18 @@
+<aside class="w-100 d-flex justify-content-center align-items-center fw-bold text-white aside-custom">
+    ASIDE
+</aside>
+
+<style>
+  .aside-custom {
+    background-color: rosybrown;
+    /* 1. Sur grand écran (Desktop/Tablette) : Tes blocs gardent leur belle hauteur */
+    height: 146px; 
+  }
+
+  /* 2. Sur petit écran (Mobile) : Dès que la taille diminue, ils rétrécissent automatiquement */
+  @media (max-width: 767px) {
+    .aside-custom {
+      height: 40px; /* Devient une ligne fine comme ton NAV */
+    }
+  }
+</style>
