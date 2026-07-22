@@ -22,7 +22,8 @@ export class Menu {
     {id : 5, label : 'About' , url : '/about'},
 
   ]
-    displayMenu=true;
+    displayMenu=false;
+    isMobile=true;
 
   ToggleMenu(){
     this.displayMenu= !this.displayMenu
